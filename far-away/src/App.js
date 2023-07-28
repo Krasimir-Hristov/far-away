@@ -11,7 +11,7 @@ const messages = [
 export default function App() {
 
 
-  let [steps, setSteps] = useState(1);
+  const [steps, setSteps] = useState(1);
 
   function handlePrevious() {
 
