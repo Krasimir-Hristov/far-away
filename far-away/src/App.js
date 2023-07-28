@@ -32,9 +32,9 @@ export default function App() {
 
   return <div className='steps'>
     <div className='numbers'>
-      <div className={`${steps >= 1 ? 'active' : ''}`}>1</div>
-      <div className={`${steps >= 2 ? 'active' : ''}`}>2</div>
-      <div className={`${steps >= 3 ? 'active' : ''}`}>3</div>
+      <div className={steps >= 1 ? 'active' : ''}>1</div>
+      <div className={steps >= 2 ? 'active' : ''}>2</div>
+      <div className={steps >= 3 ? 'active' : ''}>3</div>
     </div>
 
     <p className='message'>Step {steps}: {messages[steps - 1]}</p>
