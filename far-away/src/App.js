@@ -17,7 +17,7 @@ export default function App() {
   function handlePrevious() {
 
     if (steps > 1) {
-      setSteps(steps - 1);
+      setSteps((s) => s - 1);
     }
 
 
@@ -26,7 +26,7 @@ export default function App() {
   function handleNext() {
 
     if (steps < 3) {
-      setSteps(steps + 1);
+      setSteps((s) => s + 1);
     }
 
   }
@@ -34,7 +34,7 @@ export default function App() {
   return (
 
     <React.Fragment>
-      <button className='close' onClick={() => setIsOpen(!isOpen)}>&times;</button>
+      <button className='close' onClick={() => setIsOpen((is) => !is)}>&times;</button>
 
       {isOpen && (<div className='steps'>
         <div className='numbers'>
